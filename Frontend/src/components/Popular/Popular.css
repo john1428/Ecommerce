@@ -1,0 +1,42 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height:90vh;
+    align-items: center;
+}
+
+.popular h1{
+    color : #171717;
+    font-size: 35px;
+    font-weight:600;
+}
+
+.popular hr{
+    width:200px;
+    height:6px;
+    border-radius: 10px;
+    background : #252525;
+}
+
+
+
+.popular-item{
+    margin-top: 50px;
+    gap:30px;
+    transform:translateX(-300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideInLeft 1s ease-in 1s 1 normal both;
+}
+
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
